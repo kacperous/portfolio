@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Kacper Kleczaj" }],
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/portfolio/icon.png",
+    apple: "/portfolio/icon.png",
   },
   openGraph: {
     title: "Kacper Kleczaj — Full Stack Developer",
