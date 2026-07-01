@@ -64,7 +64,7 @@ const projects: Project[] = [
     year: "2025",
     description: 'Aplikacja do zmiany nawyków żywieniowych — zasada "12 miesięcy, 12 nawyków". AI licznik kalorii z analizą zdjęć. Grywalizacja i moduł rodzic-dziecko.',
     tags: ["React Native", "Python", "AI", "Expo"],
-    images: ["/portfolio/dosfit/1.PNG", "/portfolio/dosfit/2.PNG", "/portfolio/dosfit/3.PNG", "/portfolio/dosfit/4.PNG", "/portfolio/dosfit/5.PNG"],
+    images: ["/portfolio/dosfit/1.png", "/portfolio/dosfit/2.png", "/portfolio/dosfit/3.png", "/portfolio/dosfit/4.png", "/portfolio/dosfit/5.png"],
     imgFit: "contain",
     portrait: true,
     links: [
