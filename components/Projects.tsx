@@ -35,6 +35,7 @@ const projects: Project[] = [
     imgFit: "cover",
     imgPos: "center",
     links: [
+      { label: "GitHub", href: "https://github.com/AlfaTeam67/HRK" },
       { label: "Raport PDF", href: "/portfolio/hrk/raport_alfaguys.pdf" },
       { label: "Poster PDF", href: "/portfolio/hrk/Poster_Alfa_v2.pdf" },
     ],
@@ -64,14 +65,23 @@ const projects: Project[] = [
     links: [],
   },
   {
-    title: "PotrzebnaLista",
-    year: "2024–2025",
-    description: "Platforma do współdzielenia list zakupów via WebSockety. Google Login, SMS weryfikacja, Stripe subskrypcje.",
-    tags: ["Django", "React", "WebSockets", "Stripe"],
-    images: ["/portfolio/potrzebnalista/1.jpg"],
+    title: "Fin-Insight",
+    year: "2025–2026",
+    description: "Aplikacja webowa do zarządzania portfelem inwestycyjnym z analizą rynkową i rekomendacjami AI. Moduł AI Advisor z integracją LLM, bezpieczeństwo OAuth2/OIDC (Keycloak) i mikroserwisy.",
+    tags: ["Spring Boot", "React", "Spring Cloud", "AI Advisor", "Keycloak", "Docker"],
+    images: [
+      "/portfolio/fin-insight/kokpit.png",
+      "/portfolio/fin-insight/rynek.png",
+      "/portfolio/fin-insight/portfele.png",
+      "/portfolio/fin-insight/doradca.png",
+      "/portfolio/fin-insight/transakcje.png",
+      "/portfolio/fin-insight/login.png",
+    ],
     imgFit: "cover",
     imgPos: "center",
-    links: [],
+    links: [
+      { label: "GitHub", href: "https://github.com/AlfaTeam67/ZZPJ" },
+    ],
   },
   {
     title: "DPF Hunter",
