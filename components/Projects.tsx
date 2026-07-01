@@ -20,6 +20,25 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "AI Content Agent",
+    year: "2026",
+    hackathon: "🥇 I miejsce — Blazity Hackathon: AI for Content",
+    description: "Agent AI generujący spersonalizowane posty i wideo na podstawie historii profilu użytkownika. Dostosowuje treść do trendów, edytuje wideo i publikuje na Facebooku oraz Instagramie (Reels) przez Meta API.",
+    tags: ["Next.js", "Python", "AI Agent", "Meta API", "Video Gen"],
+    images: [
+      "/portfolio/blazity/step1.png",
+      "/portfolio/blazity/step2.png",
+      "/portfolio/blazity/step3.png",
+      "/portfolio/blazity/step4.png",
+      "/portfolio/blazity/blazity.png",
+    ],
+    imgFit: "cover",
+    imgPos: "center",
+    links: [
+      { label: "GitHub", href: "https://github.com/kacperous/blazity-hackaton-team1" },
+    ],
+  },
+  {
     title: "HRK CRM",
     year: "2026",
     description: "System CRM z wbudowanym asystentem AI i architekturą RAG (Bielik 4.5B v3.0, pgvector) do automatyzacji cyklu życia umów i waloryzacji stawek.",

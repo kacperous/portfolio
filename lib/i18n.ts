@@ -13,8 +13,8 @@ export const i18n = {
       bio: "Projektuję i buduję strony internetowe, aplikacje webowe i mobilne — od pomysłu po wdrożenie. Pomogę Ci stworzyć produkt, który działa i sprzedaje.",
       cta: "Zobacz projekty",
       stats: [
-        { value: "4", label: "hackathony '25" },
-        { value: "2×", label: "1. miejsce" },
+        { value: "5", label: "hackathony '25–'26" },
+        { value: "3×", label: "1. miejsce" },
         { value: "1.5", label: "roku doświadczenia" },
       ],
     },
@@ -62,6 +62,7 @@ export const i18n = {
       label: "Portfolio",
       title: "Projekty",
       descriptions: [
+        "Agent AI generujący spersonalizowane posty i wideo na podstawie historii profilu użytkownika. Dostosowuje treść do trendów, edytuje wideo i publikuje na Facebooku oraz Instagramie (Reels) przez Meta API.",
         "System CRM dla HRK Payroll Consulting automatyzujący cykl życia kontraktów, proces waloryzacji stawek i raportowanie KPI. Wdrożyłem od podstaw architekturę AI/RAG (Bielik 4.5B v3.0, pgvector, Ollama) do semantycznej analizy treści umów.",
         'Aplikacja do zmiany nawyków żywieniowych — zasada "12 miesięcy, 12 nawyków". AI licznik kalorii z analizą zdjęć. Grywalizacja i moduł rodzic-dziecko.',
         "Mobilna aplikacja do zarządzania wspólnymi wydatkami. Automatyczne rozliczanie długów, raporty wydatków i synchronizacja w czasie rzeczywistym.",
@@ -74,9 +75,10 @@ export const i18n = {
     hackathons: {
       label: "Osiągnięcia",
       title: "Hackathony",
-      stats: ["hackathony w 2025", "pierwsze miejsce", "drugie miejsce"],
+      stats: ["hackathony '25–'26", "pierwsze miejsce", "drugie miejsce"],
       team: "zespół:",
       items: [
+        "Agent AI automatyzujący tworzenie i publikację spersonalizowanych postów oraz wideo w mediach społecznościowych z użyciem Meta API.",
         "Grywalizacja karty Łodzianina — angażuje mieszkańców we wsparcie lokalnych firm i inicjatywy miejskie.",
         "Mobilna aplikacja do zdrowych nawyków żywieniowych dzieci z AI, quizami, modułem Roblox i grywalizacją.",
         "AI system do wykrywania pojazdów z usuniętym DPF z kamer miejskich + integracja z CEPiK.",
@@ -117,8 +119,8 @@ export const i18n = {
       bio: "I design and build websites, web apps and mobile apps — from idea to deployment. I'll help you create a product that works and converts.",
       cta: "See projects",
       stats: [
-        { value: "4", label: "hackathons '25" },
-        { value: "2×", label: "1st place" },
+        { value: "5", label: "hackathons '25–'26" },
+        { value: "3×", label: "1st place" },
         { value: "1.5", label: "year of experience" },
       ],
     },
@@ -166,6 +168,7 @@ export const i18n = {
       label: "Portfolio",
       title: "Projects",
       descriptions: [
+        "AI agent generating personalized posts and videos based on user profile history. Adapts content to trends, edits the video, and publishes to Facebook and Instagram Reels via the Meta API.",
         "CRM system for HRK Payroll Consulting automating contract lifecycles, rate indexation, and KPI reporting. Developed the entire AI/RAG architecture (Bielik 4.5B v3.0, pgvector, Ollama) from scratch for semantic contract analysis.",
         'Habit-changing nutrition app — "12 months, 12 habits" principle. AI calorie counter with photo analysis. Gamification and parent-child module.',
         "Mobile app for managing shared expenses. Automatic debt settlement, spending reports and real-time synchronization.",
@@ -178,9 +181,10 @@ export const i18n = {
     hackathons: {
       label: "Achievements",
       title: "Hackathons",
-      stats: ["hackathons in 2025", "first place", "second place"],
+      stats: ["hackathons '25–'26", "first place", "second place"],
       team: "team:",
       items: [
+        "AI agent automating the creation and publication of personalized posts and videos on social media platforms using the Meta API.",
         "Gamification of the Łodzianin city card — engages residents in supporting local businesses and city initiatives.",
         "Mobile app for children's healthy eating habits with AI, quizzes, Roblox module and gamification.",
         "AI system for detecting vehicles with removed DPF filters from city cameras + CEPiK integration.",

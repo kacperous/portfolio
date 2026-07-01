@@ -6,6 +6,15 @@ import { i18n } from "@/lib/i18n";
 const hackathons = [
   {
     place: { pl: "I miejsce", en: "1st place" },
+    event: "Blazity Hackathon: AI for Content",
+    organizer: "Blazity",
+    date: { pl: "Czerwiec 2026", en: "June 2026" },
+    team: "GitPushers",
+    project: "AI Content Agent",
+    isFirst: true,
+  },
+  {
+    place: { pl: "I miejsce", en: "1st place" },
     event: "Fintech Łódź_Hack",
     date: { pl: "Grudzień 2025", en: "December 2025" },
     team: "GitPushers",
@@ -58,8 +67,8 @@ export default function Hackathons() {
 
         <div className="flex flex-wrap gap-8 mb-12 pb-10" style={{ borderBottom: "1px solid var(--border)" }}>
           {[
-            { n: "4", label: t.stats[0] },
-            { n: "2×", label: t.stats[1] },
+            { n: "5", label: t.stats[0] },
+            { n: "3×", label: t.stats[1] },
             { n: "2×", label: t.stats[2] },
           ].map(s => (
             <div key={s.label}>
