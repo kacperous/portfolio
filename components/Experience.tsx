@@ -5,7 +5,7 @@ import { i18n } from "@/lib/i18n";
 
 const experiences = [
   {
-    period: { pl: "2025 — teraz", en: "2025 — now" },
+    period: { pl: "Grudzień 2025 — teraz", en: "December 2025 — now" },
     role: "Full Stack Developer",
     company: "Norsys sp. z o.o.",
     product: "GreenTransit",
@@ -14,7 +14,7 @@ const experiences = [
     tags: ["FastAPI", "Python", "Alembic", "PyTest", "React", "TypeScript", "PostgreSQL", "AWS", "PWA"],
   },
   {
-    period: { pl: "Wrzesień 2025 — teraz", en: "September 2025 — now" },
+    period: { pl: "Wrzesień 2025 — Maj 2026", en: "September 2025 — May 2026" },
     role: "Junior Python Developer",
     company: "Gaius-Lex",
     product: "Gaius-Lex",
