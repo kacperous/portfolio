@@ -62,6 +62,7 @@ export const i18n = {
       label: "Portfolio",
       title: "Projekty",
       descriptions: [
+        "System CRM dla HRK Payroll Consulting automatyzujący cykl życia kontraktów, proces waloryzacji stawek i raportowanie KPI. Wdrożyłem od podstaw architekturę AI/RAG (Bielik 4.5B v3.0, pgvector, Ollama) do semantycznej analizy treści umów.",
         'Aplikacja do zmiany nawyków żywieniowych — zasada "12 miesięcy, 12 nawyków". AI licznik kalorii z analizą zdjęć. Grywalizacja i moduł rodzic-dziecko.',
         "Mobilna aplikacja do zarządzania wspólnymi wydatkami. Automatyczne rozliczanie długów, raporty wydatków i synchronizacja w czasie rzeczywistym.",
         "Platforma do współdzielenia list zakupów via WebSockety. Google Login, SMS weryfikacja, Stripe subskrypcje.",
@@ -165,6 +166,7 @@ export const i18n = {
       label: "Portfolio",
       title: "Projects",
       descriptions: [
+        "CRM system for HRK Payroll Consulting automating contract lifecycles, rate indexation, and KPI reporting. Developed the entire AI/RAG architecture (Bielik 4.5B v3.0, pgvector, Ollama) from scratch for semantic contract analysis.",
         'Habit-changing nutrition app — "12 months, 12 habits" principle. AI calorie counter with photo analysis. Gamification and parent-child module.',
         "Mobile app for managing shared expenses. Automatic debt settlement, spending reports and real-time synchronization.",
         "Shared shopping list platform via WebSockets. Google Login, SMS verification, Stripe subscriptions.",

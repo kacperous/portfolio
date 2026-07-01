@@ -20,6 +20,26 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "HRK CRM",
+    year: "2026",
+    description: "System CRM z wbudowanym asystentem AI i architekturą RAG (Bielik 4.5B v3.0, pgvector) do automatyzacji cyklu życia umów i waloryzacji stawek.",
+    tags: ["FastAPI", "React", "AI / RAG", "PostgreSQL (pgvector)", "Docker"],
+    images: [
+      "/portfolio/hrk/chat_myslacy.png",
+      "/portfolio/hrk/klienci_adowanie_umowy.png",
+      "/portfolio/hrk/waloryzacja.png",
+      "/portfolio/hrk/umowy.png",
+      "/portfolio/hrk/logowanie.png",
+      "/portfolio/hrk/my.jpeg",
+    ],
+    imgFit: "cover",
+    imgPos: "center",
+    links: [
+      { label: "Raport PDF", href: "/portfolio/hrk/raport_alfaguys.pdf" },
+      { label: "Poster PDF", href: "/portfolio/hrk/Poster_Alfa_v2.pdf" },
+    ],
+  },
+  {
     title: "DosFit",
     year: "2025",
     description: 'Aplikacja do zmiany nawyków żywieniowych — zasada "12 miesięcy, 12 nawyków". AI licznik kalorii z analizą zdjęć. Grywalizacja i moduł rodzic-dziecko.',
