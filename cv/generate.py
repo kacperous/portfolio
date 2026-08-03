@@ -43,12 +43,16 @@ CONTACT = {
 }
 
 PROFILE = {
-    "pl": "Software Developer z 1,5 roku doświadczenia komercyjnego. Buduję aplikacje webowe i mobilne "
-          "w Pythonie (FastAPI, Django) oraz TypeScripcie (React, React Native, Next.js). Odpowiadam za "
-          "architekturę systemu eCMR na AWS. Laureat 5 hackathonów, w tym 3 pierwsze miejsca.",
-    "en": "Software Developer with 1.5 years of commercial experience. I build web and mobile applications "
-          "in Python (FastAPI, Django) and TypeScript (React, React Native, Next.js). I own the architecture "
-          "of an AWS hosted eCMR system. Winner of 5 hackathons, including 3 first places.",
+    "pl": "Student informatyki z 1,5 roku komercyjnego doświadczenia. Tworzę aplikacje webowe i mobilne "
+          "w Pythonie (FastAPI, Django) oraz TypeScripcie (React, React Native, Next.js), od modelu danych "
+          "po wdrożenie na AWS. Odpowiadam za architekturę systemu eCMR dla branży transportowej, a jedną "
+          "z moich aplikacji mobilnych wydałem w App Store i Google Play. Umiejętności sprawdzam na "
+          "hackathonach: 5 startów, 3 pierwsze miejsca.",
+    "en": "Computer science student with 1.5 years of commercial experience. I build web and mobile "
+          "applications in Python (FastAPI, Django) and TypeScript (React, React Native, Next.js), from the "
+          "data model to an AWS deployment. I own the architecture of an eCMR system for the transport "
+          "industry and shipped one of my mobile apps to the App Store and Google Play. I put my skills to "
+          "the test at hackathons: 5 entries, 3 first places.",
 }
 
 EXPERIENCE = [
@@ -107,12 +111,10 @@ EXPERIENCE = [
         },
         "points": {
             "pl": [
-                "Narzędzia web scrapingowe, walidacja i standaryzacja pozyskanych dokumentów",
-                "Optymalizacja przetwarzania dużych wolumenów danych",
+                "Web scraping, walidacja dokumentów i optymalizacja przetwarzania dużych wolumenów danych",
             ],
             "en": [
-                "Web scraping tools, validation and standardization of retrieved documents",
-                "Optimization of large volume data processing",
+                "Web scraping, document validation and optimization of large volume data processing",
             ],
         },
     },
@@ -143,10 +145,10 @@ PROJECTS = [
         "title": "AI Content Agent",
         "meta": {"pl": "I miejsce, Blazity Hackathon", "en": "1st place, Blazity Hackathon"},
         "desc": {
-            "pl": "Agent generujący spersonalizowane posty i wideo, montuje materiał i publikuje na Facebooku "
-                  "oraz Instagramie przez Meta API.",
-            "en": "Agent generating personalized posts and videos, editing the material and publishing to "
-                  "Facebook and Instagram through the Meta API.",
+            "pl": "Agent generujący spersonalizowane posty i wideo, publikuje je na Facebooku i Instagramie "
+                  "przez Meta API.",
+            "en": "Agent generating personalized posts and videos, publishing them to Facebook and Instagram "
+                  "through the Meta API.",
         },
     },
     {
@@ -176,13 +178,15 @@ HACKATHONS = [
 
 SKILLS = [
     {"label": {"pl": "Frontend", "en": "Frontend"},
-     "items": ["React", "React Native", "TypeScript", "Next.js", "Tailwind CSS", "PWA"]},
+     "items": ["React", "React Native", "Expo", "TypeScript", "Next.js", "Tailwind CSS", "PWA"]},
     {"label": {"pl": "Backend", "en": "Backend"},
-     "items": ["Python", "FastAPI", "Django", "Node.js", "Java", "Spring Boot", "REST API"]},
+     "items": ["Python", "FastAPI", "Django", "Poetry", "Node.js", "Java", "Spring Boot", "REST API",
+               "Keycloak", "Meta API"]},
     {"label": {"pl": "Dane i infrastruktura", "en": "Data and infrastructure"},
-     "items": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Docker", "AWS", "CI/CD", "Git"]},
+     "items": ["PostgreSQL", "Alembic", "MySQL", "MongoDB", "Firebase", "Redis", "Docker", "AWS",
+               "CI/CD", "Git"]},
     {"label": {"pl": "Testy, AI i narzędzia", "en": "Testing, AI and tools"},
-     "items": ["PyTest", "RAG", "pgvector", "GitHub Copilot", "Cursor"]},
+     "items": ["PyTest", "RAG", "pgvector", "Ollama", "Claude Code", "GitHub Copilot", "Cursor"]},
 ]
 
 EDUCATION = [
