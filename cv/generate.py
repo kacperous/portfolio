@@ -298,7 +298,7 @@ body {
   padding: 10px 15px; border-radius: 6px; margin-bottom: 8px;
 }
 .photo, .monogram {
-  width: 78px; height: 78px; border-radius: 50%; flex-shrink: 0;
+  width: 88px; height: 88px; border-radius: 50%; flex-shrink: 0;
   border: 2px solid #a8b87a; background: #2a2825;
 }
 .photo { object-fit: cover; object-position: center 20%; }
