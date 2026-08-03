@@ -24,6 +24,15 @@ export const i18n = {
       now: "TERAZ",
       items: [
         {
+          description: "Rozwój aplikacji webowych i mobilnych dla klientów Digitay — od discovery i architektury, przez implementację, po wdrożenie produkcyjne. Główny produkt: Fluo — system do rejestracji czasu pracy i zarządzania zespołem.",
+          points: [
+            "Fluo: rejestracja czasu pracy, grafiki, urlopy i raportowanie kosztów projektów",
+            "Aplikacja mobilna (React Native/Expo) z trybem offline i synchronizacją danych",
+            "Panel webowy w Next.js + TypeScript oraz REST API na Node.js",
+            "Integracje z systemami kadrowo-płacowymi, CI/CD i automatyczne wdrożenia",
+          ],
+        },
+        {
           description: "Pełna odpowiedzialność za architekturę i rozwój GreenTransit — systemu eCMR do elektronicznego obiegu dokumentów transportowych. Platforma PWA na AWS, eliminuje papier w branży TSL.",
           points: [
             "Całościowa odpowiedzialność za architekturę i kod aplikacji",
@@ -129,6 +138,15 @@ export const i18n = {
       title: "Work",
       now: "NOW",
       items: [
+        {
+          description: "Building web and mobile applications for Digitay clients — from discovery and architecture through implementation to production rollout. Flagship product: Fluo — a time tracking and team management platform.",
+          points: [
+            "Fluo: time tracking, schedules, leave requests and project cost reporting",
+            "Mobile app (React Native/Expo) with offline mode and data synchronization",
+            "Web panel in Next.js + TypeScript and a Node.js REST API",
+            "Integrations with HR/payroll systems, CI/CD and automated deployments",
+          ],
+        },
         {
           description: "Full ownership of GreenTransit architecture — an eCMR system for digital transport document flow. AWS-hosted PWA eliminating paperwork in the TSL industry.",
           points: [

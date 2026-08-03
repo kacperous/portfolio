@@ -5,8 +5,17 @@ import { i18n } from "@/lib/i18n";
 
 const experiences = [
   {
+    period: { pl: "Lipiec 2026 — teraz", en: "July 2026 — now" },
+    role: "Software Developer",
+    company: "Digitay",
+    product: "Digitay.pl",
+    productUrl: "https://digitay.pl/",
+    current: true,
+    tags: ["React Native", "Expo", "TypeScript", "Next.js", "Node.js", "REST API", "PostgreSQL", "CI/CD"],
+  },
+  {
     period: { pl: "Grudzień 2025 — teraz", en: "December 2025 — now" },
-    role: "Full Stack Developer",
+    role: "Software Developer",
     company: "Norsys sp. z o.o.",
     product: "GreenTransit",
     productUrl: "https://greentransit.pl",
@@ -19,7 +28,7 @@ const experiences = [
     company: "Gaius-Lex",
     product: "Gaius-Lex",
     productUrl: "https://gaius-lex.pl",
-    current: true,
+    current: false,
     tags: ["Python", "FastAPI", "Web Scraping", "PostgreSQL", "Docker"],
   },
   {
