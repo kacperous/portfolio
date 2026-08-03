@@ -22,8 +22,8 @@ OUT = ROOT / "assets" / "photo.jpg"
 FACE_BOX = (597, 464, 877, 826)
 
 # Ile wysokosci glowy ma obejmowac kadr i jak bardzo zejsc ponizej jej srodka
-CROP_SCALE = 1.6
-CENTER_DROP = 0.05
+CROP_SCALE = 2.3
+CENTER_DROP = 0.18
 
 SIZE = 600
 
@@ -64,7 +64,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", nargs="?", default=str(DEFAULT_SRC))
     ap.add_argument("--scale", type=float, default=CROP_SCALE,
-                    help="ile wysokosci glowy obejmuje kadr (domyslnie 1.6)")
+                    help="ile wysokosci glowy obejmuje kadr (domyslnie 2.3)")
     args = ap.parse_args()
 
     src = Path(args.source)
