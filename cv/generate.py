@@ -44,13 +44,11 @@ CONTACT = {
 
 PROFILE = {
     "pl": "Student informatyki z 1,5 roku komercyjnego doświadczenia. Tworzę aplikacje webowe i mobilne "
-          "w Pythonie (FastAPI, Django) oraz TypeScripcie (React, React Native, Next.js), od modelu danych "
-          "po wdrożenie na AWS. Odpowiadam za architekturę systemu eCMR dla branży transportowej, a jedną "
+          "w Pythonie oraz TypeScripcie, od modelu danych po wdrożenie na AWS. Odpowiadam za architekturę systemu eCMR dla branży transportowej, a jedną "
           "z moich aplikacji mobilnych wydałem w App Store i Google Play. Umiejętności sprawdzam na "
           "hackathonach: 5 startów, 3 pierwsze miejsca.",
     "en": "Computer science student with 1.5 years of commercial experience. I build web and mobile "
-          "applications in Python (FastAPI, Django) and TypeScript (React, React Native, Next.js), from the "
-          "data model to an AWS deployment. I own the architecture of an eCMR system for the transport "
+          "applications in Python and TypeScript, from the data model to an AWS deployment. I own the architecture of an eCMR system for the transport "
           "industry and shipped one of my mobile apps to the App Store and Google Play. I put my skills to "
           "the test at hackathons: 5 entries, 3 first places.",
 }
@@ -70,11 +68,11 @@ EXPERIENCE = [
         "points": {
             "pl": [
                 "Fluo: rejestracja czasu pracy, grafiki, urlopy i raporty kosztów projektów",
-                "Aplikacja mobilna w React Native/Expo z trybem offline, panel webowy w Next.js i API na Node.js",
+                "Aplikacja mobilna w React Native/Expo z trybem offline, panel webowy w React i TypeScript, API w FastAPI",
             ],
             "en": [
                 "Fluo: time tracking, schedules, leave requests and project cost reports",
-                "React Native/Expo mobile app with offline mode, Next.js web panel and a Node.js API",
+                "React Native/Expo mobile app with offline mode, React and TypeScript web panel, FastAPI backend",
             ],
         },
     },
