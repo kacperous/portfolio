@@ -44,11 +44,11 @@ CONTACT = {
 
 PROFILE = {
     "pl": "Student informatyki z 1,5 roku komercyjnego doświadczenia. Tworzę aplikacje webowe i mobilne "
-          "w Pythonie oraz TypeScripcie, od modelu danych po wdrożenie na AWS. Odpowiadam za architekturę systemu eCMR dla branży transportowej, a jedną "
+          "w Pythonie oraz TypeScripcie, od modelu danych po wdrożenie. Odpowiadam za architekturę systemu eCMR dla branży transportowej, a jedną "
           "z moich aplikacji mobilnych wydałem w App Store i Google Play. Umiejętności sprawdzam na "
           "hackathonach: 5 startów, 3 pierwsze miejsca.",
     "en": "Computer science student with 1.5 years of commercial experience. I build web and mobile "
-          "applications in Python and TypeScript, from the data model to an AWS deployment. I own the architecture of an eCMR system for the transport "
+          "applications in Python and TypeScript, from the data model to deployment. I own the architecture of an eCMR system for the transport "
           "industry and shipped one of my mobile apps to the App Store and Google Play. I put my skills to "
           "the test at hackathons: 5 entries, 3 first places.",
 }
