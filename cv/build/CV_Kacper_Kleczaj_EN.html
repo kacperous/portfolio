@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CV — Kacper Kleczaj</title>
+<style>
+@page { size: A4; margin: 11mm 0 11mm 0; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+  font-size: 8.6pt;
+  line-height: 1.38;
+  color: #23211d;
+  background: #fff;
+}
+
+.page { width: 190mm; margin: 0 auto; padding: 0 2mm; }
+
+.mono { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; }
+
+/* ---------- header ---------- */
+.header {
+  display: flex; align-items: center; gap: 14px;
+  background: #1a1916; color: #f0ece6;
+  padding: 11px 15px; border-radius: 6px; margin-bottom: 11px;
+}
+.photo {
+  width: 74px; height: 74px; border-radius: 50%; flex-shrink: 0;
+  object-fit: cover; object-position: center 22%;
+  border: 2px solid #a8b87a; background: #2a2825;
+}
+.monogram {
+  width: 74px; height: 74px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid #a8b87a; background: #2a2825; color: #a8b87a;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24pt; font-weight: 700; letter-spacing: -0.02em;
+}
+.h-main { flex: 1; min-width: 0; }
+.name { font-size: 25pt; font-weight: 700; letter-spacing: -0.025em; line-height: 1; margin-bottom: 4px; }
+.role { font-size: 8.4pt; letter-spacing: 0.09em; text-transform: uppercase; color: #a8b87a; margin-bottom: 8px; }
+.contacts { display: flex; flex-wrap: wrap; gap: 3px 12px; font-size: 7.8pt; color: #b9b3aa; }
+.contacts span { white-space: nowrap; }
+.contacts b { color: #f0ece6; font-weight: 400; }
+.h-stats { display: flex; gap: 14px; flex-shrink: 0; padding-left: 14px; border-left: 1px solid rgba(255,255,255,0.12); }
+.h-stat { text-align: center; }
+.h-stat .n { font-size: 14pt; font-weight: 700; color: #f0ece6; line-height: 1.1; }
+.h-stat .l { font-size: 6.2pt; letter-spacing: 0.05em; text-transform: uppercase; color: #8a847c; max-width: 62px; }
+
+/* ---------- sections ---------- */
+.section { margin-bottom: 8px; }
+.section-title {
+  font-size: 7.7pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #5f6e38; padding-bottom: 2.5px; margin-bottom: 6px;
+  border-bottom: 1.4px solid #a8b87a;
+  page-break-after: avoid; break-after: avoid-page;
+}
+.profile-text { text-align: justify; color: #3a3731; }
+
+/* ---------- experience ---------- */
+.job { margin-bottom: 7px; page-break-inside: avoid; }
+.job:last-child { margin-bottom: 0; }
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.job-role { font-size: 9.6pt; font-weight: 700; color: #1a1916; }
+.job-period { font-size: 7.6pt; color: #6a6660; white-space: nowrap; }
+.job-company { font-size: 8.2pt; color: #4a463f; margin-bottom: 2px; }
+.job-company .prod { color: #5f6e38; }
+.job-desc { color: #3a3731; margin-bottom: 3px; }
+ul.points { list-style: none; margin-bottom: 4px; }
+ul.points li { padding-left: 10px; position: relative; color: #4a463f; }
+ul.points li::before {
+  content: "▸"; position: absolute; left: 0; top: 0;
+  color: #a8b87a; font-size: 6.5pt; line-height: 1.9;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 3px; }
+.tag {
+  font-size: 6.9pt; padding: 1px 5px; border-radius: 3px;
+  background: #f1f2e9; border: 1px solid #dfe2cd; color: #4a5530; white-space: nowrap;
+}
+
+/* ---------- projects ---------- */
+.proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; }
+.proj { page-break-inside: avoid; }
+.proj-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.proj-title { font-size: 9.2pt; font-weight: 700; color: #1a1916; }
+.proj-year { font-size: 7.2pt; color: #6a6660; }
+.proj-note { font-size: 7.4pt; color: #5f6e38; margin-bottom: 2px; }
+.proj-desc { font-size: 8.4pt; color: #4a463f; margin-bottom: 3px; }
+
+/* ---------- hackathons ---------- */
+.hack { display: flex; align-items: baseline; gap: 8px; padding: 2px 0; page-break-inside: avoid; }
+.hack + .hack { border-top: 1px solid #ececE6; }
+.medal { width: 13px; flex-shrink: 0; font-size: 8.5pt; }
+.hack-place { width: 62px; flex-shrink: 0; font-size: 7.8pt; font-weight: 700; color: #5f6e38; }
+.hack-event { flex: 1; font-size: 8.6pt; color: #23211d; }
+.hack-proj { font-size: 7.8pt; color: #6a6660; }
+.hack-date { width: 82px; flex-shrink: 0; text-align: right; font-size: 7.4pt; color: #6a6660; }
+
+/* ---------- skills ---------- */
+.skill-row { display: flex; gap: 9px; align-items: flex-start; padding: 2.5px 0; page-break-inside: avoid; }
+.skill-row + .skill-row { border-top: 1px solid #ececE6; }
+.skill-label {
+  width: 108px; flex-shrink: 0; font-size: 7.2pt; letter-spacing: 0.07em;
+  text-transform: uppercase; color: #6a6660; padding-top: 2px;
+}
+.skill-items { flex: 1; display: flex; flex-wrap: wrap; gap: 3px; }
+
+/* ---------- bottom grid ---------- */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; page-break-inside: avoid; }
+.edu { margin-bottom: 5px; page-break-inside: avoid; }
+.edu-degree { font-size: 8.8pt; font-weight: 700; color: #1a1916; }
+.edu-meta { font-size: 8pt; color: #4a463f; }
+.edu-period { font-size: 7.4pt; color: #6a6660; }
+.edu-note { font-size: 7.4pt; color: #5f6e38; }
+.cert { margin-bottom: 4px; page-break-inside: avoid; }
+.cert-head { display: flex; justify-content: space-between; gap: 6px; align-items: baseline; }
+.cert-title { font-size: 8.5pt; font-weight: 700; color: #1a1916; }
+.cert-year { font-size: 7.2pt; color: #6a6660; }
+.cert-sub { font-size: 7.6pt; color: #4a463f; line-height: 1.35; }
+.cert-issuer { font-size: 7.2pt; color: #6a6660; }
+
+/* ---------- languages ---------- */
+.langs { display: flex; gap: 16px; }
+.lang { flex: 1; }
+.lang-head { display: flex; justify-content: space-between; align-items: baseline; font-size: 8.2pt; margin-bottom: 2px; }
+.lang-name { font-weight: 700; color: #1a1916; }
+.lang-level { font-size: 7.4pt; color: #6a6660; }
+.bar { height: 3px; background: #ececE6; border-radius: 2px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: #a8b87a; }
+
+/* ---------- footer ---------- */
+.rodo {
+  margin-top: 10px; padding-top: 6px; border-top: 1px solid #ececE6;
+  font-size: 6.6pt; line-height: 1.4; color: #8a847c; text-align: justify;
+}
+</style>
+</head>
+<body><div class="page">
+<div class="header">
+  <div class="monogram">KK</div>
+  <div class="h-main">
+    <div class="name">Kacper Kleczaj</div>
+    <div class="role mono">Software Developer · Web &amp; Mobile</div>
+    <div class="contacts mono"><span><b>Łódź, Poland</b></span><span><b>+48 690 827 655</b></span><span><b>kleczaj.kacper@gmail.com</b></span><span><b>github.com/kacperous</b></span><span><b>linkedin.com/in/kacper-kleczaj-819622337</b></span><span><b>kacperous.github.io/portfolio</b></span></div>
+  </div>
+  <div class="h-stats"><div class="h-stat"><div class="n">5</div><div class="l">hackathons &#x27;25–&#x27;26</div></div><div class="h-stat"><div class="n">3×</div><div class="l">1st place</div></div><div class="h-stat"><div class="n">1.5</div><div class="l">years of experience</div></div></div>
+</div><div class="section">
+  <div class="section-title">Profile</div>
+  <p class="profile-text">Software Developer with 1.5 years of commercial experience building web and mobile applications — from architecture through implementation to production rollout. I work daily with Python (FastAPI, Django) and TypeScript (React, React Native, Next.js). I owned the end-to-end architecture of an AWS-hosted eCMR system and delivered an AI/RAG architecture inside a production CRM. Winner of 5 hackathons (3× 1st place, 2× 2nd place). Applied Computer Science student at Lodz University of Technology.</p>
+</div><div class="section">
+  <div class="section-title">Professional experience</div>
+  <div class="job">
+  <div class="job-head">
+    <div class="job-role">Software Developer</div>
+    <div class="job-period mono">July 2026 — present</div>
+  </div>
+  <div class="job-company">Digitay <span class="prod mono">· digitay.pl</span></div>
+  <div class="job-desc">Building web and mobile applications for Digitay clients — from discovery and architecture through implementation to production rollout. Flagship product: Fluo — a time tracking and team management platform.</div>
+  <ul class="points"><li>Fluo: time tracking, schedules, leave requests and project cost reporting</li><li>Mobile app (React Native/Expo) with offline mode and data synchronization</li><li>Web panel in Next.js + TypeScript and a Node.js REST API</li><li>Integrations with HR/payroll systems, CI/CD and automated deployments</li></ul>
+  <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">REST API</span><span class="tag">PostgreSQL</span><span class="tag">CI/CD</span></div>
+</div><div class="job">
+  <div class="job-head">
+    <div class="job-role">Software Developer</div>
+    <div class="job-period mono">December 2025 — present</div>
+  </div>
+  <div class="job-company">Norsys sp. z o.o. <span class="prod mono">· greentransit.pl</span></div>
+  <div class="job-desc">Full ownership of GreenTransit architecture — an eCMR system for digital transport document flow. AWS-hosted PWA eliminating paperwork in the TSL industry.</div>
+  <ul class="points"><li>End-to-end ownership of application architecture and code</li><li>Backend: FastAPI + Alembic (migrations) + PyTest (testing)</li><li>Frontend: React + TypeScript</li><li>Infrastructure: AWS, offline PWA, TMS/WMS/ERP integrations</li></ul>
+  <div class="tags"><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Alembic</span><span class="tag">PyTest</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span><span class="tag">PWA</span></div>
+</div><div class="job">
+  <div class="job-head">
+    <div class="job-role">Junior Python Developer</div>
+    <div class="job-period mono">September 2025 — May 2026</div>
+  </div>
+  <div class="job-company">Gaius-Lex <span class="prod mono">· gaius-lex.pl</span></div>
+  <div class="job-desc">Designing systems for automated collection and processing of data from various online sources.</div>
+  <ul class="points"><li>Web scraping tools for public document retrieval</li><li>Data validation and standardization</li><li>Optimization for large-volume data processing</li></ul>
+  <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Web Scraping</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
+</div><div class="job">
+  <div class="job-head">
+    <div class="job-role">Fullstack Developer</div>
+    <div class="job-period mono">May 2025 — March 2026</div>
+  </div>
+  <div class="job-company">QuickPick <span class="prod mono">· quickpick.pl</span></div>
+  <div class="job-desc">Building web applications and e-commerce stores. Full ownership from analysis to maintenance.</div>
+  <ul class="points"><li>Web apps: Django + React/TypeScript</li><li>Stores: WordPress/WooCommerce</li></ul>
+  <div class="tags"><span class="tag">Django</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">WordPress</span><span class="tag">WooCommerce</span></div>
+</div><div class="job">
+  <div class="job-head">
+    <div class="job-role">Junior Fullstack Developer</div>
+    <div class="job-period mono">February — May 2025</div>
+  </div>
+  <div class="job-company">GD SOFT <span class="prod mono">· gdsoft.info</span></div>
+  <div class="job-desc">Web applications with Spring Boot + React. Team collaboration in Agile/Scrum.</div>
+  <ul class="points"><li>Backend and frontend design</li><li>Code and database optimization</li></ul>
+  <div class="tags"><span class="tag">Spring Boot</span><span class="tag">Java</span><span class="tag">React</span><span class="tag">Hibernate</span><span class="tag">MySQL</span></div>
+</div>
+</div><div class="section">
+  <div class="section-title">Selected projects</div>
+  <div class="proj-grid"><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">DosFit</div>
+    <div class="proj-year mono">2025</div>
+  </div>
+  <div class="proj-note">App Store · Google Play · dosfit.pl</div>
+  <div class="proj-desc">Mobile habit-changing nutrition app (&quot;12 months, 12 habits&quot;). AI calorie counter with photo analysis, gamification and a parent-child module. Shipped to both app stores.</div>
+  <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Python</span><span class="tag">AI</span></div>
+</div><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">HRK CRM</div>
+    <div class="proj-year mono">2026</div>
+  </div>
+  <div class="proj-note">HRK Payroll Consulting</div>
+  <div class="proj-desc">CRM automating contract lifecycles, rate indexation and KPI reporting. I built the entire AI/RAG architecture (Bielik 4.5B v3.0, pgvector, Ollama) from scratch for semantic contract analysis.</div>
+  <div class="tags"><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">AI / RAG</span><span class="tag">pgvector</span><span class="tag">Docker</span></div>
+</div><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">AI Content Agent</div>
+    <div class="proj-year mono">2026</div>
+  </div>
+  <div class="proj-note">🥇 1st place — Blazity Hackathon</div>
+  <div class="proj-desc">AI agent generating personalized posts and videos from user profile history. Adapts content to trends, edits video and publishes to Facebook and Instagram Reels via the Meta API.</div>
+  <div class="tags"><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">AI Agent</span><span class="tag">Meta API</span></div>
+</div><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">Fin-Insight</div>
+    <div class="proj-year mono">2025–2026</div>
+  </div>
+  
+  <div class="proj-desc">Investment portfolio management app with market analysis and AI recommendations. AI Advisor module powered by LLMs, OAuth2/OIDC security (Keycloak), microservice architecture.</div>
+  <div class="tags"><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">Spring Cloud</span><span class="tag">Keycloak</span><span class="tag">Docker</span></div>
+</div><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">Splitly</div>
+    <div class="proj-year mono">2025</div>
+  </div>
+  
+  <div class="proj-desc">Mobile app for shared expenses — automatic debt settlement, spending reports and real-time sync.</div>
+  <div class="tags"><span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Firebase</span></div>
+</div><div class="proj">
+  <div class="proj-head">
+    <div class="proj-title">DPF Hunter</div>
+    <div class="proj-year mono">2025</div>
+  </div>
+  <div class="proj-note">🥈 2nd place — BestHackingLeague</div>
+  <div class="proj-desc">AI system detecting vehicles with removed DPF filters from city camera feeds. CEPiK integration for automatic violation reporting.</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">FastAPI</span><span class="tag">CEPiK API</span></div>
+</div></div>
+</div><div class="section">
+  <div class="section-title">Hackathons</div>
+  <div class="hack">
+  <div class="medal">🥇</div>
+  <div class="hack-place">1st place</div>
+  <div class="hack-event">Blazity Hackathon: AI for Content
+    <span class="hack-proj mono">· AI Content Agent · team: GitPushers</span>
+  </div>
+  <div class="hack-date mono">June 2026</div>
+</div><div class="hack">
+  <div class="medal">🥇</div>
+  <div class="hack-place">1st place</div>
+  <div class="hack-event">Fintech Łódź_Hack
+    <span class="hack-proj mono">· Moje Osiedle · team: GitPushers</span>
+  </div>
+  <div class="hack-date mono">December 2025</div>
+</div><div class="hack">
+  <div class="medal">🥇</div>
+  <div class="hack-place">1st place</div>
+  <div class="hack-event">Hack na Zdrowie 4 — UMED Łódź
+    <span class="hack-proj mono">· Kids Health App · team: Alfiarze</span>
+  </div>
+  <div class="hack-date mono">April–May 2025</div>
+</div><div class="hack">
+  <div class="medal">🥈</div>
+  <div class="hack-place">2nd place</div>
+  <div class="hack-event">BestHackingLeague — BEST
+    <span class="hack-proj mono">· DPF Hunter · team: Alfa Guys</span>
+  </div>
+  <div class="hack-date mono">November 2025</div>
+</div><div class="hack">
+  <div class="medal">🥈</div>
+  <div class="hack-place">2nd place</div>
+  <div class="hack-event">Hack&amp;Play — PLAY
+    <span class="hack-proj mono">· PharmaRadar · team: GitPushers</span>
+  </div>
+  <div class="hack-date mono">October 2025</div>
+</div>
+</div><div class="section">
+  <div class="section-title">Technologies</div>
+  <div class="skill-row">
+  <div class="skill-label mono">Frontend</div>
+  <div class="skill-items"><span class="tag">React</span><span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Redux</span><span class="tag">PWA</span></div>
+</div><div class="skill-row">
+  <div class="skill-label mono">Backend</div>
+  <div class="skill-items"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Django</span><span class="tag">Spring Boot</span><span class="tag">Java</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST API</span><span class="tag">WebSockets</span></div>
+</div><div class="skill-row">
+  <div class="skill-label mono">Databases</div>
+  <div class="skill-items"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">SQL Server</span><span class="tag">Alembic</span><span class="tag">Hibernate</span><span class="tag">MongoDB</span><span class="tag">Redis</span></div>
+</div><div class="skill-row">
+  <div class="skill-label mono">DevOps &amp; Infrastructure</div>
+  <div class="skill-items"><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Grafana</span><span class="tag">Prometheus</span></div>
+</div><div class="skill-row">
+  <div class="skill-label mono">Testing &amp; AI Tools</div>
+  <div class="skill-items"><span class="tag">PyTest</span><span class="tag">Unit Testing</span><span class="tag">Integration Testing</span><span class="tag">GitHub Copilot</span><span class="tag">Cursor</span><span class="tag">Claude Code</span></div>
+</div><div class="skill-row">
+  <div class="skill-label mono">Automation &amp; CMS</div>
+  <div class="skill-items"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">N8N</span></div>
+</div>
+</div><div class="cols">
+  <div>
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu">
+  <div class="edu-degree">Applied Computer Science — engineering degree</div>
+  <div class="edu-meta">Lodz University of Technology</div>
+  <div class="edu-period mono">2023 — present</div>
+  
+</div><div class="edu">
+  <div class="edu-degree">IT Technician — technical high school</div>
+  <div class="edu-meta">ZST im. Armii Krajowej</div>
+  <div class="edu-period mono">2019 — 2023</div>
+  <div class="edu-note">Graduated with honors</div>
+</div>
+    </div>
+    <div class="section">
+      <div class="section-title">Languages</div>
+      <div class="langs"><div class="lang">
+  <div class="lang-head">
+    <span class="lang-name">Polish</span>
+    <span class="lang-level mono">native</span>
+  </div>
+  <div class="bar"><i style="width:100%"></i></div>
+</div><div class="lang">
+  <div class="lang-head">
+    <span class="lang-name">English</span>
+    <span class="lang-level mono">B2</span>
+  </div>
+  <div class="bar"><i style="width:70%"></i></div>
+</div><div class="lang">
+  <div class="lang-head">
+    <span class="lang-name">German</span>
+    <span class="lang-level mono">A2</span>
+  </div>
+  <div class="bar"><i style="width:25%"></i></div>
+</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Certifications &amp; courses</div>
+    <div class="cert">
+  <div class="cert-head">
+    <div class="cert-title">Eskadra Bielika</div>
+    <div class="cert-year mono">2026</div>
+  </div>
+  <div class="cert-sub">Workshops: From model to system — Bielik in RAG architectures</div>
+  <div class="cert-issuer mono">Bielik.ai · SpeakLeash · Google for Developers</div>
+</div><div class="cert">
+  <div class="cert-head">
+    <div class="cert-title">INF.02</div>
+    <div class="cert-year mono">2023</div>
+  </div>
+  <div class="cert-sub">Web &amp; application design</div>
+  <div class="cert-issuer mono">ZST im. Armii Krajowej</div>
+</div><div class="cert">
+  <div class="cert-head">
+    <div class="cert-title">INF.03</div>
+    <div class="cert-year mono">2023</div>
+  </div>
+  <div class="cert-sub">Database management &amp; integration, computer networks</div>
+  <div class="cert-issuer mono">ZST im. Armii Krajowej</div>
+</div><div class="cert">
+  <div class="cert-head">
+    <div class="cert-title">E-commerce Marketing</div>
+    <div class="cert-year mono">2024</div>
+  </div>
+  <div class="cert-sub">Strategy, brand building, campaigns — Paweł Tkaczyk</div>
+  <div class="cert-issuer mono">Santander / Lodz University of Technology</div>
+</div><div class="cert">
+  <div class="cert-head">
+    <div class="cert-title">Foreign Internship</div>
+    <div class="cert-year mono">2021</div>
+  </div>
+  <div class="cert-sub">E-commerce store setup, robotics basics</div>
+  <div class="cert-issuer mono">ENSO GROUP LTD, Ateny / Athens</div>
+</div>
+  </div>
+</div>
+</div></body>
+</html>
